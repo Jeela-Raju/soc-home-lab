@@ -48,6 +48,14 @@ index=main source="*Sysmon*" EventCode=3 "192.168.24.129"
 index=main source="*Sysmon*" EventCode=1 CommandLine="*-enc*"
 ```
 
+## MITRE ATT&CK mapping
+
+Mapped each attack to its official MITRE ATT&CK technique, since that's how real SOC teams reference attacker behavior:
+
+- RDP brute force → **T1110 - Brute Force**
+- Nmap scan → **T1046 - Network Service Discovery**
+- Encoded PowerShell → **T1059.001 - Command and Scripting Interpreter: PowerShell** and **T1027 - Obfuscated Files or Information**
+
 All my SPL queries are in [spl_queries.md](./spl_queries.md).
 
 ## Dashboard
